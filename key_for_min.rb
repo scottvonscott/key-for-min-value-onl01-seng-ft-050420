@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   array << value
  end
  hash.collect do |key, value|
-  if array.include? (value > array[3])
+  if array.include? (value > array[2])
      next
    else
     key
