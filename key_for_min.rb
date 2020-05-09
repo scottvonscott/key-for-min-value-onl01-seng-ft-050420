@@ -1,6 +1,15 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
+require pry
 
-def key_for_min_value(name_hash)
-
+def key_for_min_value(hash)
+  array = []
+ hash.collect do |key, value|
+  array << value
+ end
+ hash.collect do |key, value|
+  if array.include? (array < value)
+     next
+   else
+    key
+   end
+  end
 end
