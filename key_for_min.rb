@@ -6,8 +6,8 @@ def key_for_min_value(hash)
   array << value
   if
     min_value == nil || value < min_value
-     min_value << value
-     min_key << key
+     min_value = value
+     min_key = key
   end
  end
  return min_key
