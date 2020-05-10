@@ -4,10 +4,9 @@ def key_for_min_value(hash)
   array << value
  end
  hash.each do |key, value|
-    value > array.any?
-     if true
+    if value > array.any?
       next
-     else
+    else
       return key
    end
  end
